@@ -1,0 +1,18 @@
+{
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./Tests",
+        "-p",
+        "test_*.py"
+    ],
+    "python.analysis.extraPaths": [
+        "./HashMaps",
+        "./Tests"
+    ]
+}

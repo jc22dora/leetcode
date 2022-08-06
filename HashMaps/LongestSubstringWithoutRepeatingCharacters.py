@@ -1,5 +1,5 @@
 
-class Solution:
+class LongestSubWithoutRepChar:
     def lengthOfLongestSubstringTest(self, s: str) -> int:
         # len 0
         # len 1
@@ -40,16 +40,3 @@ class Solution:
     
     def testAnswer(self, answer:int, expected:int):
         return answer == expected
-
-if __name__ == "__main__":
-    solution = Solution()
-    testcase1 = "abcabcbb"
-    expected1 = 3
-    testcase2 = "dvdf"
-    expected2 = 3
-    testcase3 = "abdcvdf"
-    expected3 = 5
-    
-    print(solution.testAnswer(solution.lengthOfLongestSubstring(testcase1), expected1))
-    print(solution.testAnswer(solution.lengthOfLongestSubstring(testcase2), expected2))
-    print(solution.testAnswer(solution.lengthOfLongestSubstring(testcase3), expected3))

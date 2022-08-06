@@ -4,7 +4,7 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
-class Solution:
+class AddTwoNumbers:
     def AddTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         if(l1 == 0): return l2
         elif(l2 == 0): return l1
@@ -36,14 +36,3 @@ class Solution:
                 sum -= 10
             return ListNode(sum, None)#self.AddTwoNumbersHelper(l1.next, l2.next, l3.next, carry, sum)
         return l3
-
-
-if __name__ == "__main__":
-    solution = Solution()
-    l1 = ListNode(2,ListNode(4, ListNode(3)))
-    l2 = ListNode(5,ListNode(6, ListNode(4)))
-    obj = solution.AddTwoNumbers(l1, l2)
-    testcase1 = ""
-    expected1 = [7,0,8]
-    testcase2 = ""
-    testcase3 = ""
